@@ -1,0 +1,63 @@
+Paste the console output you saved at the end of step 3.C (2 points)
+For whatever reason Clion cut the terminal message, all I could copy is:
+Changes not staged for commit:
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 341 bytes | 341.00 KiB/s, done.
+Total 4 (delta 1), reused 1 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lisa000s/CEN4020_A2.git
+   196696a..517a014  master -> master
+PS C:\Users\vasil\CLionProjects\CEN4020_A2> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+git shortlog
+8 commits
+
+When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+git log
+commit 196696a220646458fa36e06eb0a7ca2b0b9d047f
+Author: lisa000s <vasilinka86@gmail.com>
+Date:   Thu Oct 13 20:56:44 2022 -0400
+Repository owner information added to README.md
+
+Mention two reasons why branches are used in a Git repository (4 points)
+While you're preparing 2 new variations of your website's design, you're also trying to fix bug.
+your teammate is working on a new feature.
+
+What is the difference between git log and git status? (4 points)
+git status gives information about the current working directory, git log displays the commit history for your branch.
+
+
+What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+git log --stat -p -- Vehicle.h
+What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+git log --grep=file
+
+In the context of object-oriented programming
+(I) What is inheritance?
+makes the OOP code more modular, easier to reuse and build a relationship between classes.
+(II) What is polymorphism?
+can allow us to use a common operation in different ways
+(III) What is encapsulation? (6 points)
+can hide some of the private details of a class from other objects
+
+
+
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+Integration manager: each developer has write access to their own public repository and read access to everyone else’s.
+Dictator and Lieutenants: All the lieutenants have one integration manager known as the benevolent dictator.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+if programmer needs to commit changes, he doesnt have to wait for another programmer to push changes. Dictator and Lieutenants helps a team of programmers work faster and efficient.
+
+
+Git tutorial completion date: summer 2022 for Software Engineering 2
+Github account set up date: in 2016
+
